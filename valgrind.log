@@ -1,0 +1,93 @@
+4 columns:
+- id: unsigned int
+- label: string
+- price: float
+- in_stock: bool
+tracker = 0
+name = id
+tracker = 1
+name = id
+tracker = 2
+name = id
+tracker = 3
+name = id
+Count: 4
+Mean: 0.00
+Std: 0.00
+Min: 0.00
+Max: 0.00
+tracker = 0
+name = price
+tracker = 1
+name = price
+tracker = 2
+name = price
+tracker = 3
+name = price
+Count: 4
+Mean: 0.00
+Std: 0.00
+Min: 0.00
+Max: 0.00
+4 columns:
+- id: unsigned int
+- label: string
+- price: float
+- in_stock: bool
+tracker = 0
+name = id
+tracker = 1
+name = id
+tracker = 2
+name = id
+tracker = 3
+name = id
+Count: 4
+Mean: 0.00
+Std: 0.00
+Min: 0.00
+Max: 0.00
+tracker = 0
+name = price
+tracker = 1
+name = price
+tracker = 2
+name = price
+tracker = 3
+name = price
+Count: 4
+Mean: 0.00
+Std: 0.00
+Min: 0.00
+Max: 0.00
+4 columns:
+- id: unsigned int
+- label: string
+- price: float
+- in_stock: bool
+tracker = 0
+name = id
+tracker = 1
+name = id
+tracker = 2
+name = id
+tracker = 3
+name = id
+Count: 4
+Mean: 0.00
+Std: 0.00
+Min: 0.00
+Max: 0.00
+tracker = 0
+name = price
+tracker = 1
+name = price
+tracker = 2
+name = price
+tracker = 3
+name = price
+Count: 4
+Mean: 0.00
+Std: 0.00
+Min: 0.00
+Max: 0.00

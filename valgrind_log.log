@@ -1,0 +1,43 @@
+==101541== Memcheck, a memory error detector
+==101541== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==101541== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==101541== Command: ./a.out
+==101541== Parent PID: 4746
+==101541== 
+==101541== 
+==101541== HEAP SUMMARY:
+==101541==     in use at exit: 36 bytes in 9 blocks
+==101541==   total heap usage: 47 allocs, 38 frees, 6,857 bytes allocated
+==101541== 
+==101541== 4 bytes in 1 blocks are definitely lost in loss record 1 of 3
+==101541==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==101541==    by 0x1097B5: allocate_element (get_value.c:37)
+==101541==    by 0x1098B1: df_get_value (get_value.c:60)
+==101541==    by 0x1093E7: main (main.c:23)
+==101541== 
+==101541== 16 bytes in 4 blocks are definitely lost in loss record 2 of 3
+==101541==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==101541==    by 0x1097B5: allocate_element (get_value.c:37)
+==101541==    by 0x1098B1: df_get_value (get_value.c:60)
+==101541==    by 0x10A6DA: make_value_array_unsigned (unigned_handler.c:58)
+==101541==    by 0x109479: check_valid_type (describe.c:23)
+==101541==    by 0x1094D8: df_describe (describe.c:33)
+==101541==    by 0x1093F7: main (main.c:26)
+==101541== 
+==101541== 16 bytes in 4 blocks are definitely lost in loss record 3 of 3
+==101541==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==101541==    by 0x1097B5: allocate_element (get_value.c:37)
+==101541==    by 0x1098B1: df_get_value (get_value.c:60)
+==101541==    by 0x10AAA6: make_value_array_float (float_handler.c:57)
+==101541==    by 0x10949E: check_valid_type (describe.c:25)
+==101541==    by 0x1094D8: df_describe (describe.c:33)
+==101541==    by 0x1093F7: main (main.c:26)
+==101541== 
+==101541== LEAK SUMMARY:
+==101541==    definitely lost: 36 bytes in 9 blocks
+==101541==    indirectly lost: 0 bytes in 0 blocks
+==101541==      possibly lost: 0 bytes in 0 blocks
+==101541==    still reachable: 0 bytes in 0 blocks
+==101541==         suppressed: 0 bytes in 0 blocks
+==101541== 
+==101541== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
