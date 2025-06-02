@@ -1,0 +1,9 @@
+*.out
+*.test
+*.a
+*.o
+*.log
+test*
+main.c
+*main.c
+*.csv
